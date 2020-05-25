@@ -1,0 +1,70 @@
+git init
+-inicia un proyecto o el repositorio
+
+git add nombrearchivo
+-agrega el archivo, si cambio el nombre de archivo por . agrega todos los archivos que cambiaron.
+
+git commit -m "comentar el cambio"
+-guarda el cambio.
+
+git status
+- estado del proyecto.
+
+git show
+-el historial de los cambios.
+
+git log nombre_archivo
+-solo muestra el historico de cambios de ese archivo.
+
+git, Instalar git, desde 
+============================
+comandos linux
+
+cd /
+-me lleva a la raiz del disco duro
+
+ls
+-lista los archivos y directorios del lugar donde estoy
+
+ls -al
+- lista todos los archivos inclusive los ocultos
+- sin la l no muestra los ocultos
+
+clear o crt+l
+- limpia la pantalla
+
+cd /c
+-me lleva a ese directorio o carpeta.
+
+cd ..
+- me lleva al directorio anterior
+
+mkdir nombre_carpeta
+- para crear una carpeta
+
+touch nombre_archivo.txt
+- para crear un archivo vacio
+
+cat nombre_archivo
+- para ver el contenido del archivo.
+
+history
+- muestra el historial de los comandos ejecutados
+- para ejecutar uno de la lista !#, 
+
+rm nombre_archivo
+- borra el archivo.
+
+git init
+- arrancar el repositorio, crea la carpeta .init dentro del directorio que se va a trabajar.
+
+https://www.notion.so/S-per-poderes-en-Git-d4cda44a823c4c2984ead9d2af84b598
+- comandos
+
+git config --list
+- lista la configuración inicial del git
+
+git config --global user.name "nombre de usuario"
+git config --global user.email "email del usuario"
+- Para hacer la configuración inicial del usuario que hara los commits.
+
