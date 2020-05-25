@@ -86,6 +86,65 @@ git reset --soft
 - el --hard, sebuelve exactamente e al versión que seleccione.
 - pemite volver auna versión anterior, obteniendo el id de esa versión con el comando log
 
+git log --stat
+- puedo ver todos los cambios del proyecto y me indica cuales fueron los especificos en cada archivo modificado.
+
+git checkout id_del commit, que se muestra con el de log
+git checkout id nombre_archivo
+- con esto se retorna a esa versión. OJO de mucho cuidado.
+- luego de esto se hacen los cambio y nuevamente se hace el commit nuevo
+
+git show
+- muestra los últimos cambios que hice.
+
+git branch nombre_rama
+- crea una rama a partir de donde me encuetro
+
+git checkout nombre_rama
+- para cambiar entre ramas
+
+git commit -am
+- hacer el add y el commit al mismo tiempo siempre y cuando ya se haya hecho el add. con anterioridad
+
+git merge
+git merge nombre_rama a fusionar con la master.
+- ubicarse en la rama sobre la cual se hará la fusión, normalmente en master.
+
+conflictos
+- al fusionar las ramas, y dos personas hacen cambio en el mismo punto.
+- se abre el archivo y se decide cual se debe dejar.
+- al final se debe hacer el commit -am para guardar el nuevo cambio y confirmar que parte se deja.
+- con visualStudio tiene una herramienta que de una vez le permite decidir cual dejar.
+
+GitHub
+user: andrescowboy
+correo: andresbaquer1@gmail.com
+Caba2806*
+- 
+crearlo
+ 
+git remote add origin master la dirección del repositorio remoto
+git remote add origin https://github.com/andrescowboy/cursoGit.git
+- agrega el directorio remoto.
+
+git remote
+- muestra el nuevo  origen
+
+git remote -v
+muestra el origin para descargar y subir
+
+git push origin master
+- sube los cambios al repositorio remoto
+- si es la primera vez va a pedir las credenciales de ese repositorio
+
+git pull origin master
+- descarga todo lo que se encuentra en el repositorio remoto al local
+
+git  pull origin master --allow-unrelated-histories
+- para fusionar los cambios del remoto y el local, esto sucede normalmente cada vez que se inicia un repositorio remoto.
+
+
+
 
 
 
