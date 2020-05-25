@@ -143,8 +143,74 @@ git pull origin master
 git  pull origin master --allow-unrelated-histories
 - para fusionar los cambios del remoto y el local, esto sucede normalmente cada vez que se inicia un repositorio remoto.
 
+=========================================
+cifrado de llaves.
+Llave pública y llave_privada
+- se crean de manera local, en PC y se le envia al repositorio remoto.
+- las llaves son por persona,
+
+git congif -l 
+- sabe la configuración local, para saber el usuario
+
+git config --global -user.email "email_al que quiero cambiar"
+- cambiar el email en el entorno global
+
+ssh-keygen -t rsa -b 4096 -C "correo_del repositorioremoto"
+- generar la llave ubicado en el home.
+pregunta donde se va a guardar las llave, al dar enter al comando.
+- luego pide las contraseña si se quiere o simplemente no con enter
+- luego se lleva la llave al 
+
+eval $(ssh-agent -s)
+- sirve para encender el proceso de gestor de contraseñas este corriendo.
+
+ssh-add ~/.ssh/id_rsa
+- para añadir la llave privada, la saca del homme
+
+se copia el contenido de la llave publica 
+archivo id_rsa.pub, se copia ese contenido y en git hub se agrega
+en setting - SSH and GPG keys, e nla primera.
+
+Luego se debe clonar el repositorio pero con ssh
+
+desde git, se cambia la url del repositorio
+
+git remote set-url origin git@github.com:andrescowboy/cursoGit.git
+- cambia el usuario al repositorio remoto.
+=========================================
+Tags y versiones.
+
+git log --all --grap --decorate --oneline
+-muestra toda la historia del dproyecto desde que inicio
+
+CREAR ALIAS
+poner el comando en comillas 
+alias arbolito "git log --all --grap --decorate --oneline"
+- con el alias muestra lo mismo del comando largo
+git arbolito.
+
+copiar el hash del commit
+
+git tag -a v0.1 -m "texto del commit" id del commit
+- permite adicionar el tag en un punto de los commits
+
+git tag -d dormido
+- borra  un tag 
+
+git push origin --tags
+- sube los tags al repositorio.
+
+git push origin :refs/tags/dormido
+- borrar las referencias para que lo quite del repositorio remoto.
+
+git show-branch --all
+-todas las ramas que han existido
+
+gitk
+- muestra de modo visual
 
 
+para mandar una rama a
 
 
 
