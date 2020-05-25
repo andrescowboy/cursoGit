@@ -48,7 +48,7 @@ touch nombre_archivo.txt
 cat nombre_archivo
 - para ver el contenido del archivo.
 
-history
+log
 - muestra el historial de los comandos ejecutados
 - para ejecutar uno de la lista !#, 
 
