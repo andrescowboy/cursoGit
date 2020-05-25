@@ -68,3 +68,25 @@ git config --global user.name "nombre de usuario"
 git config --global user.email "email del usuario"
 - Para hacer la configuración inicial del usuario que hara los commits.
 
+git show nombre_archivo
+- muestra el historial de todo el archivo, los cambios realizados etc.
+
+cuando se habre el editor de texto,
+se adiciona el texto
+ escape + i
+ - adicionar el texto
+ escape+shift+zz
+ - guarda el cambio. y se sale 
+
+ git diff la del historial que presento con el comando log
+ - la primera el asume que el la mas reciente y la segunda contra la que quiero hacer la comparación
+
+git reset --soft
+- el doft es mas suave, deja lo que no haya hecho commit
+- el --hard, sebuelve exactamente e al versión que seleccione.
+- pemite volver auna versión anterior, obteniendo el id de esa versión con el comando log
+
+
+
+
+
